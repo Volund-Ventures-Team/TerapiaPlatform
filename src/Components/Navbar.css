@@ -1,0 +1,172 @@
+/* Small Navbar styles */
+.small-navbar {
+  background-color: #007bff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.small-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.contact-info {
+  font-size: 14px;
+  color: #b0bec5; /* Grey color for the text */
+  display: flex;
+  align-items: center;
+  font-weight: bold; /* Make text bold */
+}
+
+.contact-info .contact-link {
+  color: #b0bec5; /* Grey color for the link text */
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: bold; /* Make text bold */
+}
+
+.contact-info .contact-link:hover {
+  color: #e0e0e0; /* Light hover color for contrast */
+}
+
+.contact-info img.contact-logo {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+  margin-right: 8px; /* Space between logo and text */
+}
+
+.calendar-info {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-info img.calendar-logo {
+  width: 16px; /* Smaller size for calendar logo */
+  height: 16px;
+  margin-right: 8px; /* Space between logo and text */
+}
+
+.small-navbar-login {
+  display: flex;
+  align-items: center;
+}
+
+.small-navbar-login .nav-links {
+  color: #b0bec5; /* Grey color for the Login link */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bold; /* Make text bold */
+}
+
+.small-navbar-login .nav-links:hover {
+  color: #e0e0e0; /* Light hover color for contrast */
+}
+
+.small-navbar-login .nav-links .login-logo {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px; /* Space between logo and text */
+}
+
+/* Animation effect for the small navbar background */
+.small-navbar.scrolled {
+  background-color: #0056b3; /* Darker blue for the animation effect */
+}
+
+/* Navbar styles */
+.navbar {
+  background: #007bff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  color: #faf7f7;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-links, .nav-links-button {
+  color: #faf7f7;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links:hover, .nav-links-button:hover {
+  color: #e0e0e0;
+}
+
+/* Modal styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.close-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
